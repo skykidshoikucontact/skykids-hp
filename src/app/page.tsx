@@ -3,6 +3,7 @@ import { getNews, getStaff, getSettings } from '@/lib/dataFetcher';
 import PublicLayout from '@/components/PublicLayout';
 import HeroSlider from '@/components/HeroSlider';
 import FAQSection from '@/components/FAQSection';
+import MealsCarousel from '@/components/MealsCarousel';
 
 export default async function HomePage() {
   const news = await getNews();
@@ -158,25 +159,7 @@ export default async function HomePage() {
       <section id="meals" className="py-16 bg-white">
         <div className="max-w-5xl mx-auto px-4">
           <h2 className="text-2xl font-bold text-center mb-10">給食のご紹介</h2>
-          <div className="relative">
-            <div className="flex overflow-x-auto gap-4 pb-4 snap-x snap-mandatory scrollbar-hide">
-              <div className="flex-shrink-0 w-[80%] md:w-[calc(33.333%-1rem)] snap-center">
-                <div className="bg-gray-200 aspect-[4/3] rounded-2xl shadow-[0_4px_12px_rgba(0,0,0,0.1)] flex items-center justify-center text-gray-500 text-sm">
-                  給食1
-                </div>
-              </div>
-              <div className="flex-shrink-0 w-[80%] md:w-[calc(33.333%-1rem)] snap-center">
-                <div className="bg-gray-200 aspect-[4/3] rounded-2xl shadow-[0_4px_12px_rgba(0,0,0,0.1)] flex items-center justify-center text-gray-500 text-sm">
-                  給食2
-                </div>
-              </div>
-              <div className="flex-shrink-0 w-[80%] md:w-[calc(33.333%-1rem)] snap-center">
-                <div className="bg-gray-200 aspect-[4/3] rounded-2xl shadow-[0_4px_12px_rgba(0,0,0,0.1)] flex items-center justify-center text-gray-500 text-sm">
-                  給食3
-                </div>
-              </div>
-            </div>
-          </div>
+          <MealsCarousel />
         </div>
       </section>
 
