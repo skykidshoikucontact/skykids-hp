@@ -1,0 +1,23 @@
+[
+  {
+    "id": "staff-1",
+    "name": "山田 花子",
+    "years": 8,
+    "message": "一人ひとりに寄り添った保育を心がけています。子どもたちの笑顔が私の元気の源です。",
+    "photo": "/images/staff/hanako.jpg"
+  },
+  {
+    "id": "staff-2",
+    "name": "佐藤 太郎",
+    "years": 5,
+    "message": "子どもたちと一緒に遊び、一緒に学ぶ毎日を大切にしています。元気いっぱいの保育を目指します！",
+    "photo": "/images/staff/taro.jpg"
+  },
+  {
+    "id": "staff-3",
+    "name": "鈴木 美咲",
+    "years": 3,
+    "message": "子どもたちの「できた！」という瞬間に立ち会えることが何より嬉しいです。",
+    "photo": "/images/staff/misaki.jpg"
+  }
+]

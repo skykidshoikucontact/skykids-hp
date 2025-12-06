@@ -1,0 +1,18 @@
+{
+  "pricing": {
+    "enrollmentFee": "10,000円",
+    "monthlyFee0to2": "50,000円〜",
+    "monthlyFee3to5": "45,000円〜",
+    "mealFee": "5,000円/月",
+    "extendedCare": "500円/30分"
+  },
+  "availability": {
+    "asOfDate": "2025年1月",
+    "classes": [
+      { "name": "0歳児", "status": "△ 残り1名" },
+      { "name": "1歳児", "status": "× 満員" },
+      { "name": "2歳児", "status": "○ 空きあり" },
+      { "name": "3歳児以上", "status": "○ 空きあり" }
+    ]
+  }
+}
