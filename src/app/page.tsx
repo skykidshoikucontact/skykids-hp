@@ -81,7 +81,7 @@ export default async function HomePage() {
       </section>
 
       {/* Skykids Line Illustration */}
-      <div className="w-full overflow-hidden">
+      <div className="w-full overflow-hidden flex justify-center">
         <img
           src="/images/skykids_yellowline.png"
           alt=""
