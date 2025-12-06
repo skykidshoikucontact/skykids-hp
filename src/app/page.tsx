@@ -77,19 +77,17 @@ export default async function HomePage() {
               お知らせ一覧へ
             </Link>
           </div>
+
+          {/* Skykids Line Illustration */}
+          <div className="overflow-hidden flex justify-center mt-12">
+            <img
+              src="/images/skykids_yellowline.png"
+              alt=""
+              className="w-[300%] max-w-none h-auto"
+            />
+          </div>
         </div>
       </section>
-
-      {/* Skykids Line Illustration */}
-      <div className="w-full bg-[var(--accent-color)] pt-12 pb-8">
-        <div className="overflow-hidden flex justify-center">
-          <img
-            src="/images/skykids_yellowline.png"
-            alt=""
-            className="w-[300%] max-w-none h-auto"
-          />
-        </div>
-      </div>
 
       {/* SKY KIDSの紹介 */}
       <section id="intro" className="py-16 bg-white">
