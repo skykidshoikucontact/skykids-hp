@@ -128,48 +128,51 @@ export default function HeroSlider() {
         </div>
       </div>
 
-      {/* Navigation Arrows */}
-      <button
-        onClick={() => {
-          prevSlide();
-          setIsAutoPlaying(false);
-          setTimeout(() => setIsAutoPlaying(true), 8000);
-        }}
-        className="absolute left-4 md:left-10 top-1/2 -translate-y-1/2 z-30 w-8 h-8 md:w-16 md:h-16 bg-white/20 hover:bg-white/40 rounded-full flex items-center justify-center text-white transition-all duration-300 backdrop-blur-sm hover:scale-110"
-        aria-label="前のスライド"
-      >
-        <svg className="w-4 h-4 md:w-8 md:h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
-        </svg>
-      </button>
-      <button
-        onClick={() => {
-          nextSlide();
-          setIsAutoPlaying(false);
-          setTimeout(() => setIsAutoPlaying(true), 8000);
-        }}
-        className="absolute right-4 md:right-10 top-1/2 -translate-y-1/2 z-30 w-8 h-8 md:w-16 md:h-16 bg-white/20 hover:bg-white/40 rounded-full flex items-center justify-center text-white transition-all duration-300 backdrop-blur-sm hover:scale-110"
-        aria-label="次のスライド"
-      >
-        <svg className="w-4 h-4 md:w-8 md:h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-        </svg>
-      </button>
+      {/* Navigation Arrows and Dots */}
+      <div className="absolute bottom-16 md:bottom-28 left-1/2 -translate-x-1/2 z-30 flex items-center gap-4">
+        <button
+          onClick={() => {
+            prevSlide();
+            setIsAutoPlaying(false);
+            setTimeout(() => setIsAutoPlaying(true), 8000);
+          }}
+          className="w-8 h-8 md:w-12 md:h-12 bg-white/20 hover:bg-white/40 rounded-full flex items-center justify-center text-white transition-all duration-300 backdrop-blur-sm hover:scale-110"
+          aria-label="前のスライド"
+        >
+          <svg className="w-4 h-4 md:w-6 md:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+          </svg>
+        </button>
 
-      {/* Dots Indicator */}
-      <div className="absolute bottom-28 left-1/2 -translate-x-1/2 z-30 flex gap-4">
-        {slides.map((_, index) => (
-          <button
-            key={index}
-            onClick={() => goToSlide(index)}
-            className={`transition-all duration-500 rounded-full ${
-              index === currentSlide
-                ? 'bg-white w-12 h-4'
-                : 'bg-white/50 hover:bg-white/70 w-4 h-4'
-            }`}
-            aria-label={`スライド ${index + 1}`}
-          />
-        ))}
+        {/* Dots */}
+        <div className="flex gap-3 md:gap-4">
+          {slides.map((_, index) => (
+            <button
+              key={index}
+              onClick={() => goToSlide(index)}
+              className={`transition-all duration-500 rounded-full ${
+                index === currentSlide
+                  ? 'bg-white w-8 h-3 md:w-12 md:h-4'
+                  : 'bg-white/50 hover:bg-white/70 w-3 h-3 md:w-4 md:h-4'
+              }`}
+              aria-label={`スライド ${index + 1}`}
+            />
+          ))}
+        </div>
+
+        <button
+          onClick={() => {
+            nextSlide();
+            setIsAutoPlaying(false);
+            setTimeout(() => setIsAutoPlaying(true), 8000);
+          }}
+          className="w-8 h-8 md:w-12 md:h-12 bg-white/20 hover:bg-white/40 rounded-full flex items-center justify-center text-white transition-all duration-300 backdrop-blur-sm hover:scale-110"
+          aria-label="次のスライド"
+        >
+          <svg className="w-4 h-4 md:w-6 md:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+          </svg>
+        </button>
       </div>
     </section>
   );
