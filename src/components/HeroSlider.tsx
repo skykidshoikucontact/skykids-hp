@@ -129,7 +129,7 @@ export default function HeroSlider() {
       </div>
 
       {/* Navigation Arrows and Dots */}
-      <div className="absolute bottom-16 md:bottom-28 left-1/2 -translate-x-1/2 z-30 flex items-center gap-4">
+      <div className="absolute bottom-4 md:bottom-10 left-1/2 -translate-x-1/2 z-30 flex items-center gap-4">
         <button
           onClick={() => {
             prevSlide();
