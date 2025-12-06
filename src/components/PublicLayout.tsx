@@ -121,16 +121,6 @@ export default function PublicLayout({
         {children}
       </main>
 
-      {/* Fixed Tour Button */}
-      <a
-        href="https://forms.google.com/"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="fixed bottom-6 right-6 bg-[#FFABAB] text-white font-bold py-3 px-6 rounded-full shadow-lg hover:bg-[#FF8A8A] transition-colors z-50"
-      >
-        見学申込み
-      </a>
-
       {/* Footer */}
       <footer className="bg-[#F2F2F2] py-10">
         <div className="max-w-5xl mx-auto px-4">
