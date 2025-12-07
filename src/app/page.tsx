@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { getNews, getStaff, getSettings } from '@/lib/dataFetcher';
+import { getNews, getSettings } from '@/lib/dataFetcher';
 import PublicLayout from '@/components/PublicLayout';
 import HeroSlider from '@/components/HeroSlider';
 import FAQPreview from '@/components/FAQPreview';
@@ -7,7 +7,6 @@ import MealsCarousel from '@/components/MealsCarousel';
 
 export default async function HomePage() {
   const news = await getNews();
-  const staff = await getStaff();
   const settings = await getSettings();
 
   const latestNews = news.slice(0, 3);
@@ -321,31 +320,7 @@ export default async function HomePage() {
         </div>
       </section>
 
-      {/* 9. スタッフ紹介 */}
-      <section id="staff" className="py-16 bg-white">
-        <div className="max-w-5xl mx-auto px-4">
-          <h2 className="text-2xl font-bold text-center mb-10">スタッフ紹介</h2>
-          <div className="grid md:grid-cols-3 gap-8 mb-8">
-            {staff.slice(0, 3).map((member) => (
-              <div key={member.id} className="text-center">
-                <div className="w-32 h-32 mx-auto mb-4 rounded-full bg-gray-200 flex items-center justify-center text-gray-500 text-sm overflow-hidden shadow-[0_4px_12px_rgba(0,0,0,0.1)]">
-                  写真
-                </div>
-                <h3 className="font-bold text-lg mb-1">{member.name}</h3>
-                <p className="text-sm text-[var(--primary-dark)] mb-2">経験{member.years}年</p>
-                <p className="text-gray-600 text-sm leading-relaxed">{member.message}</p>
-              </div>
-            ))}
-          </div>
-          <div className="text-center">
-            <Link href="/staff" className="btn-primary inline-block">
-              スタッフ一覧へ
-            </Link>
-          </div>
-        </div>
-      </section>
-
-      {/* 10. FAQ */}
+      {/* 9. FAQ */}
       <section id="faq" className="py-16 bg-gray-50">
         <div className="max-w-5xl mx-auto px-4">
           <h2 className="text-2xl font-bold text-center mb-10">よくあるご質問</h2>
