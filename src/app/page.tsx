@@ -41,7 +41,7 @@ export default async function HomePage() {
               <ul className="space-y-3">
                 <li className="flex items-center gap-3">
                   <span className="w-7 h-7 bg-[var(--accent-color)] rounded-full flex items-center justify-center text-[var(--primary-dark)] text-sm">✓</span>
-                  <span className="text-base">児童クラブ・夜間保育対応</span>
+                  <span className="text-base">児童クラブ・一時預かり対応</span>
                 </li>
                 <li className="flex items-center gap-3">
                   <span className="w-7 h-7 bg-[var(--accent-color)] rounded-full flex items-center justify-center text-[var(--primary-dark)] text-sm">✓</span>

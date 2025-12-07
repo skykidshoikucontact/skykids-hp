@@ -7,7 +7,7 @@ const slides = [
     id: 1,
     bgColor: 'from-[#7FE7FF] via-[#00CFFF] to-[#0099CC]',
     title: '忙しいパパママの\n子育てを応援！',
-    subtitle: '児童クラブ・夜間保育・一時預かり対応',
+    subtitle: '児童クラブ・一時預かり対応',
   },
   {
     id: 2,
