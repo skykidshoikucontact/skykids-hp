@@ -1,29 +1,21 @@
 {
   "pricing": {
-    "enrollmentFee": "10,000円",
-    "monthlyFee0to2": "50,000円〜",
-    "monthlyFee3to5": "45,000円〜",
-    "mealFee": "5,000円/月",
-    "extendedCare": "500円/30分"
+    "enrollmentFee": "お問い合わせください",
+    "monthlyFee0to2": "お問い合わせください",
+    "monthlyFee3to5": "お問い合わせください",
+    "mealFee": "お問い合わせください",
+    "extendedCare": "お問い合わせください"
   },
   "availability": {
-    "asOfDate": "2025年1月",
+    "asOfDate": "2025年12月",
     "classes": [
       {
-        "name": "0歳児",
-        "status": "△ 残り1名"
-      },
-      {
-        "name": "1歳児",
-        "status": "✕ 満員"
-      },
-      {
-        "name": "2歳児",
-        "status": "✕ 満員"
-      },
-      {
-        "name": "3歳児以上",
+        "name": "児童クラブ",
         "status": "○ 空きあり"
+      },
+      {
+        "name": "一時預かり",
+        "status": "○ 受付中"
       }
     ]
   }
