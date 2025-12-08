@@ -112,14 +112,6 @@ export default function HeroSlider() {
                       {slide.subtitle}
                     </p>
                   )}
-                  <a
-                    href="https://forms.google.com/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="pointer-events-auto inline-block bg-[var(--primary-color)] text-white font-bold py-4 px-10 rounded-full text-lg md:text-xl hover:bg-[var(--primary-dark)] hover:scale-105 transition-all duration-300 shadow-2xl"
-                  >
-                    見学のお申し込み
-                  </a>
                 </>
               )}
             </div>
