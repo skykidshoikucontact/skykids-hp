@@ -15,19 +15,20 @@ export default function PublicLayout({
     <div className="min-h-screen flex flex-col">
       {/* Header */}
       <header className="bg-white shadow-sm sticky top-0 z-50">
-        <div className="max-w-6xl mx-auto px-4">
-          <div className="flex justify-between items-center h-16">
-            {/* Logo */}
-            <Link href="/" className="flex items-center">
-              <Image
-                src="/images/logo.jpg"
-                alt="SKY KIDS"
-                width={160}
-                height={50}
-                className="h-12 w-auto object-contain"
-                priority
-              />
-            </Link>
+        <div className="flex justify-between items-center h-16">
+          {/* Logo */}
+          <Link href="/" className="flex items-center h-full">
+            <Image
+              src="/images/logo.jpg"
+              alt="SKY KIDS"
+              width={200}
+              height={64}
+              className="h-full w-auto object-cover"
+              priority
+            />
+          </Link>
+
+          <div className="flex items-center gap-8 pr-4">
 
             {/* Navigation */}
             <nav className="hidden md:flex items-center gap-8">
