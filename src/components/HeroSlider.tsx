@@ -6,20 +6,20 @@ const slides = [
   {
     id: 1,
     bgColor: 'from-[#7FE7FF] via-[#00CFFF] to-[#0099CC]',
-    title: '忙しいパパママの\n子育てを応援！',
-    subtitle: '児童クラブ・一時預かり対応',
+    title: '空色の放課後が、\n子供を育てる。',
+    subtitle: '',
   },
   {
     id: 2,
     bgColor: 'from-[#FFD89B] via-[#FFB347] to-[#FF8C00]',
-    title: 'アットホームな\n学童保育',
-    subtitle: '宿題サポート・学習支援も充実',
+    title: '',
+    subtitle: '',
   },
   {
     id: 3,
     bgColor: 'from-[#B8E6D8] via-[#98D8C8] to-[#4CAF50]',
-    title: '食育活動に\n力を入れています',
-    subtitle: '野菜を育て、苦手を克服！',
+    title: '',
+    subtitle: '',
   },
 ];
 
@@ -102,12 +102,16 @@ export default function HeroSlider() {
             >
               {index === currentSlide && (
                 <>
-                  <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold mb-8 drop-shadow-2xl whitespace-pre-line leading-tight tracking-tight">
-                    {slide.title}
-                  </h1>
-                  <p className="text-xl md:text-2xl lg:text-3xl mb-10 drop-shadow-lg font-light tracking-wide">
-                    {slide.subtitle}
-                  </p>
+                  {slide.title && (
+                    <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold mb-8 drop-shadow-2xl whitespace-pre-line leading-tight tracking-tight">
+                      {slide.title}
+                    </h1>
+                  )}
+                  {slide.subtitle && (
+                    <p className="text-xl md:text-2xl lg:text-3xl mb-10 drop-shadow-lg font-light tracking-wide">
+                      {slide.subtitle}
+                    </p>
+                  )}
                   <a
                     href="https://forms.google.com/"
                     target="_blank"
