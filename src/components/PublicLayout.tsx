@@ -17,13 +17,13 @@ export default function PublicLayout({
       <header className="bg-white shadow-sm sticky top-0 z-50">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
-          <Link href="/" className="relative h-16 w-[180px] overflow-hidden">
+          <Link href="/" className="relative h-16 w-[160px] overflow-hidden ml-2">
             <Image
               src="/images/logo.jpg"
               alt="SKY KIDS"
               fill
-              sizes="180px"
-              className="object-cover scale-150"
+              sizes="160px"
+              className="object-cover scale-110"
               priority
             />
           </Link>
