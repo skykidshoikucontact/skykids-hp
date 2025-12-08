@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function PublicLayout({
   children,
@@ -17,11 +18,15 @@ export default function PublicLayout({
         <div className="max-w-6xl mx-auto px-4">
           <div className="flex justify-between items-center h-16">
             {/* Logo */}
-            <Link href="/" className="flex items-center gap-2">
-              <div className="w-10 h-10 bg-[var(--primary-color)] rounded-full flex items-center justify-center">
-                <span className="text-white font-bold text-sm">SK</span>
-              </div>
-              <span className="font-bold text-xl text-[var(--primary-dark)]">SKY KIDS</span>
+            <Link href="/" className="flex items-center">
+              <Image
+                src="/images/logo.jpg"
+                alt="SKY KIDS"
+                width={160}
+                height={50}
+                className="h-12 w-auto object-contain"
+                priority
+              />
             </Link>
 
             {/* Navigation */}
@@ -136,14 +141,9 @@ export default function PublicLayout({
       <footer className="bg-[#F2F2F2] py-10">
         <div className="max-w-5xl mx-auto px-4">
           <div className="grid md:grid-cols-3 gap-8 text-sm leading-[1.6] text-gray-700">
-            {/* Logo & Description */}
+            {/* Description */}
             <div>
-              <div className="flex items-center gap-2 mb-3">
-                <div className="w-8 h-8 bg-[var(--primary-color)] rounded-full flex items-center justify-center">
-                  <span className="text-white font-bold text-xs">SK</span>
-                </div>
-                <span className="font-bold text-base">児童クラブ SKY KIDS</span>
-              </div>
+              <p className="font-bold text-base mb-3">児童クラブ SKY KIDS</p>
               <p className="text-xs text-gray-600">
                 忙しいお母さんお父さんの<br />
                 子育てを応援します！

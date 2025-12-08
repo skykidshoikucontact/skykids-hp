@@ -25,28 +25,15 @@ const slides = [
 
 export default function HeroSlider() {
   const [currentSlide, setCurrentSlide] = useState(0);
-  const [isAutoPlaying, setIsAutoPlaying] = useState(true);
 
   const nextSlide = useCallback(() => {
     setCurrentSlide((prev) => (prev + 1) % slides.length);
   }, []);
 
-  const prevSlide = useCallback(() => {
-    setCurrentSlide((prev) => (prev - 1 + slides.length) % slides.length);
-  }, []);
-
-  const goToSlide = (index: number) => {
-    setCurrentSlide(index);
-    setIsAutoPlaying(false);
-    setTimeout(() => setIsAutoPlaying(true), 8000);
-  };
-
   useEffect(() => {
-    if (!isAutoPlaying) return;
-
     const interval = setInterval(nextSlide, 6000);
     return () => clearInterval(interval);
-  }, [isAutoPlaying, nextSlide]);
+  }, [nextSlide]);
 
   return (
     <section className="relative h-[60vh] min-h-[400px] md:h-screen md:min-h-[600px] md:max-h-[1000px] overflow-hidden">
@@ -103,7 +90,7 @@ export default function HeroSlider() {
               {index === currentSlide && (
                 <>
                   {slide.title && (
-                    <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold mb-8 drop-shadow-2xl whitespace-pre-line leading-tight tracking-tight">
+                    <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-8 drop-shadow-2xl whitespace-pre-line leading-tight tracking-tight">
                       {slide.title}
                     </h1>
                   )}
@@ -119,52 +106,6 @@ export default function HeroSlider() {
         </div>
       </div>
 
-      {/* Navigation Arrows and Dots */}
-      <div className="absolute bottom-4 md:bottom-10 left-1/2 -translate-x-1/2 z-30 flex items-center gap-4">
-        <button
-          onClick={() => {
-            prevSlide();
-            setIsAutoPlaying(false);
-            setTimeout(() => setIsAutoPlaying(true), 8000);
-          }}
-          className="w-8 h-8 md:w-12 md:h-12 bg-white/20 hover:bg-white/40 rounded-full flex items-center justify-center text-white transition-all duration-300 backdrop-blur-sm hover:scale-110"
-          aria-label="前のスライド"
-        >
-          <svg className="w-4 h-4 md:w-6 md:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
-          </svg>
-        </button>
-
-        {/* Dots */}
-        <div className="flex gap-3 md:gap-4">
-          {slides.map((_, index) => (
-            <button
-              key={index}
-              onClick={() => goToSlide(index)}
-              className={`transition-all duration-500 rounded-full ${
-                index === currentSlide
-                  ? 'bg-white w-8 h-3 md:w-12 md:h-4'
-                  : 'bg-white/50 hover:bg-white/70 w-3 h-3 md:w-4 md:h-4'
-              }`}
-              aria-label={`スライド ${index + 1}`}
-            />
-          ))}
-        </div>
-
-        <button
-          onClick={() => {
-            nextSlide();
-            setIsAutoPlaying(false);
-            setTimeout(() => setIsAutoPlaying(true), 8000);
-          }}
-          className="w-8 h-8 md:w-12 md:h-12 bg-white/20 hover:bg-white/40 rounded-full flex items-center justify-center text-white transition-all duration-300 backdrop-blur-sm hover:scale-110"
-          aria-label="次のスライド"
-        >
-          <svg className="w-4 h-4 md:w-6 md:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-          </svg>
-        </button>
-      </div>
     </section>
   );
 }
