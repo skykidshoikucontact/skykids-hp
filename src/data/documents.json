@@ -1,0 +1,44 @@
+{
+  "documents": [
+    {
+      "id": "1",
+      "category": "入会関連",
+      "name": "入会申込書",
+      "description": "入会時に必要な申込書です",
+      "url": "",
+      "order": 1
+    },
+    {
+      "id": "2",
+      "category": "入会関連",
+      "name": "重要事項説明書",
+      "description": "入会前にご確認ください",
+      "url": "",
+      "order": 2
+    },
+    {
+      "id": "3",
+      "category": "届出関連",
+      "name": "欠席届",
+      "description": "お休みの際にご提出ください",
+      "url": "",
+      "order": 3
+    },
+    {
+      "id": "4",
+      "category": "届出関連",
+      "name": "届出変更届",
+      "description": "登録情報の変更時にご提出ください",
+      "url": "",
+      "order": 4
+    },
+    {
+      "id": "5",
+      "category": "その他",
+      "name": "年間行事予定表",
+      "description": "年間の行事予定です",
+      "url": "",
+      "order": 5
+    }
+  ]
+}

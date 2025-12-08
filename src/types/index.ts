@@ -31,3 +31,12 @@ export interface Settings {
     classes: AvailabilityClass[];
   };
 }
+
+export interface Document {
+  id: string;
+  category: string;
+  name: string;
+  description: string;
+  url: string;
+  order: number;
+}

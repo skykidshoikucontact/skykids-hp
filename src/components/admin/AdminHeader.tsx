@@ -20,7 +20,7 @@ export default function AdminHeader() {
 
   const navItems = [
     { href: '/admin/news', label: 'お知らせ管理' },
-    { href: '/admin/staff', label: 'スタッフ管理' },
+    { href: '/admin/documents', label: '書類管理' },
     { href: '/admin/settings', label: '設定管理' },
   ];
 

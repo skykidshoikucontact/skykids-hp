@@ -1,35 +1,43 @@
 import Link from 'next/link';
 import PublicLayout from '@/components/PublicLayout';
+import { getFileContent } from '@/lib/githubClient';
+import type { Document } from '@/types';
+
+export const dynamic = 'force-dynamic';
 
 export const metadata = {
   title: '書類ダウンロード | SKY KIDS',
   description: 'SKY KIDSの各種書類をダウンロードできます。',
 };
 
-const documents = [
-  {
-    category: '入会関連',
-    items: [
-      { name: '入会申込書', filename: 'application.pdf', description: '入会時に必要な申込書です' },
-      { name: '重要事項説明書', filename: 'important_matters.pdf', description: '入会前にご確認ください' },
-    ],
-  },
-  {
-    category: '届出関連',
-    items: [
-      { name: '欠席届', filename: 'absence.pdf', description: 'お休みの際にご提出ください' },
-      { name: '届出変更届', filename: 'change.pdf', description: '登録情報の変更時にご提出ください' },
-    ],
-  },
-  {
-    category: 'その他',
-    items: [
-      { name: '年間行事予定表', filename: 'annual_schedule.pdf', description: '年間の行事予定です' },
-    ],
-  },
-];
+async function getDocuments(): Promise<Document[]> {
+  try {
+    const result = await getFileContent('src/data/documents.json');
+    if (!result) return [];
+    const data = JSON.parse(result.content);
+    return data.documents || [];
+  } catch {
+    return [];
+  }
+}
 
-export default function DocumentsPage() {
+export default async function DocumentsPage() {
+  const documents = await getDocuments();
+
+  // Group by category
+  const groupedDocuments = documents.reduce((acc, doc) => {
+    if (!acc[doc.category]) {
+      acc[doc.category] = [];
+    }
+    acc[doc.category].push(doc);
+    return acc;
+  }, {} as Record<string, Document[]>);
+
+  // Sort each category by order
+  Object.values(groupedDocuments).forEach(docs => {
+    docs.sort((a, b) => a.order - b.order);
+  });
+
   return (
     <PublicLayout>
       <div className="py-12">
@@ -49,27 +57,30 @@ export default function DocumentsPage() {
           </p>
 
           {/* Documents List */}
-          {documents.map((category, categoryIndex) => (
-            <section key={categoryIndex} className="mb-8">
+          {Object.entries(groupedDocuments).map(([category, docs]) => (
+            <section key={category} className="mb-8">
               <h2 className="text-xl font-bold text-[var(--primary-dark)] mb-4 flex items-center gap-2">
                 <span className="w-8 h-8 bg-[var(--accent-color)] rounded-full flex items-center justify-center text-sm">📄</span>
-                {category.category}
+                {category}
               </h2>
               <div className="bg-white border rounded-lg overflow-hidden">
-                {category.items.map((doc, docIndex) => (
+                {docs.filter(doc => doc.url).map((doc, docIndex) => (
                   <div
-                    key={docIndex}
+                    key={doc.id}
                     className={`flex items-center justify-between p-4 hover:bg-gray-50 transition-colors ${
-                      docIndex < category.items.length - 1 ? 'border-b' : ''
+                      docIndex < docs.filter(d => d.url).length - 1 ? 'border-b' : ''
                     }`}
                   >
                     <div>
                       <p className="font-medium">{doc.name}</p>
-                      <p className="text-sm text-gray-500">{doc.description}</p>
+                      {doc.description && (
+                        <p className="text-sm text-gray-500">{doc.description}</p>
+                      )}
                     </div>
                     <a
-                      href={`/documents/${doc.filename}`}
-                      download
+                      href={doc.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
                       className="flex items-center gap-2 bg-[var(--primary-color)] text-white px-4 py-2 rounded-full text-sm hover:bg-[var(--primary-dark)] transition-colors"
                     >
                       <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -79,9 +90,16 @@ export default function DocumentsPage() {
                     </a>
                   </div>
                 ))}
+                {docs.filter(doc => doc.url).length === 0 && (
+                  <p className="text-center text-gray-500 py-4">現在ダウンロード可能な書類はありません</p>
+                )}
               </div>
             </section>
           ))}
+
+          {documents.length === 0 && (
+            <p className="text-center text-gray-500 py-8">現在ダウンロード可能な書類はありません</p>
+          )}
 
           {/* Note */}
           <div className="bg-[var(--accent-color)] rounded-lg p-6 mb-10">
