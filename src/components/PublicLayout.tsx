@@ -17,7 +17,7 @@ export default function PublicLayout({
       <header className="bg-white shadow-sm sticky top-0 z-50">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
-          <Link href="/" className="relative h-16 w-[160px] overflow-hidden ml-2">
+          <Link href="/" className="relative h-16 w-[160px] overflow-hidden">
             <Image
               src="/images/logo.jpg"
               alt="SKY KIDS"
