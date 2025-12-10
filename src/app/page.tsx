@@ -38,7 +38,7 @@ export default async function HomePage() {
             <div>
               <h3 className="text-xl font-bold mb-4 text-[var(--primary-dark)]">
                 忙しいお母さんお父さんの<br />
-                子育てを応援！
+                子育てを応援しています！
               </h3>
               <p className="text-base leading-[1.7] text-gray-700 mb-4">
                 仕事をする上でどうしても子供を預けないといけない時ってありますよね。
@@ -366,8 +366,16 @@ export default async function HomePage() {
         <div className="max-w-5xl mx-auto px-4">
           <h2 className="text-2xl font-bold text-center mb-10">アクセス</h2>
           <div className="grid md:grid-cols-2 gap-8">
-            <div className="bg-gray-200 aspect-video rounded-2xl flex items-center justify-center text-gray-500">
-              Google Map 埋め込み
+            <div className="aspect-video rounded-2xl overflow-hidden">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3352.8!2d130.7658!3d31.7480!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzHCsDQ0JzUyLjciTiAxMzDCsDQ1JzU2LjkiRQ!5e0!3m2!1sja!2sjp!4v1"
+                width="100%"
+                height="100%"
+                style={{ border: 0 }}
+                allowFullScreen
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+              />
             </div>
             <div className="text-base leading-[1.7]">
               <h3 className="font-bold text-lg mb-4">児童クラブ SKY KIDS</h3>
@@ -375,13 +383,13 @@ export default async function HomePage() {
                 <div className="flex gap-3">
                   <dt className="font-bold w-20 shrink-0">住所</dt>
                   <dd className="text-gray-700">
-                    〒899-XXXX<br />
-                    鹿児島県霧島市国分○○町X-XX
+                    〒899-4353<br />
+                    鹿児島県霧島市国分向花町8-48
                   </dd>
                 </div>
                 <div className="flex gap-3">
                   <dt className="font-bold w-20 shrink-0">電話</dt>
-                  <dd className="text-gray-700">0995-XX-XXXX</dd>
+                  <dd className="text-gray-700">0995-70-6623</dd>
                 </div>
                 <div className="flex gap-3">
                   <dt className="font-bold w-20 shrink-0">営業時間</dt>
@@ -396,7 +404,7 @@ export default async function HomePage() {
                 </div>
                 <div className="flex gap-3">
                   <dt className="font-bold w-20 shrink-0">アクセス</dt>
-                  <dd className="text-gray-700">○○近く</dd>
+                  <dd className="text-gray-700">向花五叉路（ファミリーマート）近く</dd>
                 </div>
               </dl>
             </div>

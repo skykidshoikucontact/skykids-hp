@@ -160,7 +160,7 @@ export default function PublicLayout({
               <p className="font-bold text-base mb-3">児童クラブ SKY KIDS</p>
               <p className="text-xs text-gray-600">
                 忙しいお母さんお父さんの<br />
-                子育てを応援します！
+                子育てを応援しています！
               </p>
             </div>
 
@@ -181,9 +181,9 @@ export default function PublicLayout({
             <div>
               <h3 className="font-bold text-sm mb-3">お問い合わせ</h3>
               <div className="text-xs text-gray-600 space-y-1">
-                <p>〒899-XXXX</p>
-                <p>鹿児島県霧島市国分○○町X-XX</p>
-                <p className="font-bold text-sm text-gray-800 mt-2">TEL: 0995-XX-XXXX</p>
+                <p>〒899-4353</p>
+                <p>鹿児島県霧島市国分向花町8-48</p>
+                <p className="font-bold text-sm text-gray-800 mt-2">TEL: 0995-70-6623</p>
                 <p>営業時間: 月〜金 11:00〜19:00 / 土 7:30〜19:00</p>
               </div>
             </div>
