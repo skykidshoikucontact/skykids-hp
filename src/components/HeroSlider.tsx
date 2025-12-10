@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useEffect, useCallback } from 'react';
+import Link from 'next/link';
 
 const slides = [
   {
@@ -74,6 +75,18 @@ export default function HeroSlider() {
           <div className="absolute inset-0 bg-black/10" />
         </div>
       ))}
+
+      {/* Now Enrolling Badge - Left Bottom */}
+      <Link
+        href="/recruit"
+        className="absolute bottom-6 left-6 z-30 hover:scale-105 transition-transform"
+      >
+        <img
+          src="/images/now_enrolling.png"
+          alt="児童募集中"
+          className="w-28 md:w-36 h-auto"
+        />
+      </Link>
 
       {/* Content - always on top */}
       <div className="absolute inset-0 z-20 flex items-center justify-center pointer-events-none">
