@@ -81,11 +81,19 @@ export default function HeroSlider() {
         href="/recruit"
         className="absolute bottom-8 left-4 z-30 hover:scale-105 transition-transform animate-float"
       >
-        <img
-          src="/images/now_enrolling.png"
-          alt="児童募集中"
-          className="w-36 md:w-48 h-auto"
-        />
+        <div className="relative w-36 md:w-48">
+          <img
+            src="/images/now_enrolling.png"
+            alt=""
+            className="w-full h-auto"
+          />
+          <span
+            className="absolute inset-0 flex items-center justify-center text-[#00CFFF] font-bold text-sm md:text-base"
+            style={{ fontFamily: '"Rounded Mplus 1c", "Hiragino Maru Gothic ProN", "Hiragino Maru Gothic Pro", sans-serif' }}
+          >
+            児童募集中
+          </span>
+        </div>
       </Link>
 
       {/* Content - always on top */}
