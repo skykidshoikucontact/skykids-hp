@@ -121,17 +121,17 @@ export default async function HomePage() {
 
           {/* 写真グリッド 2列×3枚 */}
           <div className="grid grid-cols-2 gap-4">
-            <div className="bg-gray-200 aspect-[4/3] rounded-2xl shadow-[0_4px_12px_rgba(0,0,0,0.1)] flex items-center justify-center text-gray-500 text-sm">
-              施設外観
+            <div className="aspect-[4/3] rounded-2xl shadow-[0_4px_12px_rgba(0,0,0,0.1)] overflow-hidden">
+              <img src="/images/skykids_view.jpg" alt="施設外観" className="w-full h-full object-cover" />
             </div>
-            <div className="bg-gray-200 aspect-[4/3] rounded-2xl shadow-[0_4px_12px_rgba(0,0,0,0.1)] flex items-center justify-center text-gray-500 text-sm">
-              学習スペース
+            <div className="aspect-[4/3] rounded-2xl shadow-[0_4px_12px_rgba(0,0,0,0.1)] overflow-hidden">
+              <img src="/images/desks.jpg" alt="学習スペース" className="w-full h-full object-cover" />
             </div>
-            <div className="bg-gray-200 aspect-[4/3] rounded-2xl shadow-[0_4px_12px_rgba(0,0,0,0.1)] flex items-center justify-center text-gray-500 text-sm col-span-2 md:col-span-1">
-              遊びスペース
+            <div className="aspect-[4/3] rounded-2xl shadow-[0_4px_12px_rgba(0,0,0,0.1)] overflow-hidden col-span-2 md:col-span-1">
+              <img src="/images/children_playtime_03.jpg" alt="遊びスペース" className="w-full h-full object-cover" />
             </div>
-            <div className="hidden md:flex bg-gray-200 aspect-[4/3] rounded-2xl shadow-[0_4px_12px_rgba(0,0,0,0.1)] items-center justify-center text-gray-500 text-sm">
-              室内遊び
+            <div className="hidden md:block aspect-[4/3] rounded-2xl shadow-[0_4px_12px_rgba(0,0,0,0.1)] overflow-hidden">
+              <img src="/images/children_playtime_01.jpg" alt="室内遊び" className="w-full h-full object-cover" />
             </div>
           </div>
         </div>
@@ -144,22 +144,22 @@ export default async function HomePage() {
 
           <div className="grid md:grid-cols-3 gap-6 mb-8">
             <div className="group">
-              <div className="bg-gray-200 aspect-[3/2] rounded-2xl shadow-[0_4px_12px_rgba(0,0,0,0.1)] flex items-center justify-center text-gray-500 text-sm mb-3 group-hover:shadow-lg transition-shadow">
-                600×400
+              <div className="aspect-[3/2] rounded-2xl shadow-[0_4px_12px_rgba(0,0,0,0.1)] overflow-hidden mb-3 group-hover:shadow-lg transition-shadow">
+                <img src="/images/children_playtime_01.jpg" alt="生活の様子1" className="w-full h-full object-cover" />
               </div>
-              <p className="text-center text-base font-medium">生活1</p>
+              <p className="text-center text-base font-medium">みんなで遊ぶ時間</p>
             </div>
             <div className="group">
-              <div className="bg-gray-200 aspect-[3/2] rounded-2xl shadow-[0_4px_12px_rgba(0,0,0,0.1)] flex items-center justify-center text-gray-500 text-sm mb-3 group-hover:shadow-lg transition-shadow">
-                600×400
+              <div className="aspect-[3/2] rounded-2xl shadow-[0_4px_12px_rgba(0,0,0,0.1)] overflow-hidden mb-3 group-hover:shadow-lg transition-shadow">
+                <img src="/images/children_playtime_02.jpg" alt="生活の様子2" className="w-full h-full object-cover" />
               </div>
-              <p className="text-center text-base font-medium">生活2</p>
+              <p className="text-center text-base font-medium">楽しい活動</p>
             </div>
             <div className="group">
-              <div className="bg-gray-200 aspect-[3/2] rounded-2xl shadow-[0_4px_12px_rgba(0,0,0,0.1)] flex items-center justify-center text-gray-500 text-sm mb-3 group-hover:shadow-lg transition-shadow">
-                600×400
+              <div className="aspect-[3/2] rounded-2xl shadow-[0_4px_12px_rgba(0,0,0,0.1)] overflow-hidden mb-3 group-hover:shadow-lg transition-shadow">
+                <img src="/images/children_playtime_03.jpg" alt="生活の様子3" className="w-full h-full object-cover" />
               </div>
-              <p className="text-center text-base font-medium">生活3</p>
+              <p className="text-center text-base font-medium">のびのび過ごす</p>
             </div>
           </div>
 
