@@ -84,7 +84,7 @@ export default function HeroSlider() {
         <img
           src="/images/now_enrolling.png"
           alt="児童募集中"
-          className="w-40 md:w-56 h-auto"
+          className="w-56 md:w-80 h-auto"
         />
       </Link>
 
