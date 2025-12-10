@@ -21,8 +21,12 @@ export default async function HomePage() {
         <div className="max-w-5xl mx-auto px-4">
           <h2 className="text-2xl font-bold text-center mb-10">SKY KIDSについて</h2>
           <div className="grid md:grid-cols-2 gap-10 items-center">
-            <div className="bg-gray-200 aspect-[4/3] rounded-2xl shadow-[0_4px_12px_rgba(0,0,0,0.1)] flex items-center justify-center text-gray-500">
-              施設の写真
+            <div className="aspect-[4/3] rounded-2xl shadow-[0_4px_12px_rgba(0,0,0,0.1)] overflow-hidden">
+              <img
+                src="/images/skykids_view.jpg"
+                alt="SKY KIDS 施設の様子"
+                className="w-full h-full object-cover"
+              />
             </div>
             <div>
               <h3 className="text-xl font-bold mb-4 text-[var(--primary-dark)]">
