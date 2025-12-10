@@ -56,31 +56,10 @@ export default function ContactPage() {
             </a>
           </article>
 
-          {/* プライバシーポリシー */}
-          <div className="mt-8 p-6 bg-gray-50 rounded-lg">
-            <h2 className="text-lg font-bold mb-4">プライバシーポリシー</h2>
-            <div className="text-sm text-gray-700 space-y-3 leading-relaxed">
-              <p>
-                児童クラブ SKY KIDS（以下「当施設」）は、お問い合わせいただいた際に取得する個人情報について、以下のとおり適切に取り扱います。
-              </p>
-              <h3 className="font-bold mt-4">1. 個人情報の利用目的</h3>
-              <p>
-                お問い合わせへの回答、見学・入会に関するご連絡、当施設からのお知らせのために利用いたします。
-              </p>
-              <h3 className="font-bold mt-4">2. 第三者への提供</h3>
-              <p>
-                法令に基づく場合を除き、ご本人の同意なく個人情報を第三者に提供することはありません。
-              </p>
-              <h3 className="font-bold mt-4">3. 個人情報の管理</h3>
-              <p>
-                個人情報への不正アクセス、紛失、漏洩等を防止するため、適切な安全管理措置を講じます。
-              </p>
-              <h3 className="font-bold mt-4">4. お問い合わせ</h3>
-              <p>
-                個人情報の取り扱いに関するお問い合わせは、当施設までご連絡ください。
-              </p>
-            </div>
-          </div>
+          {/* プライバシーポリシーへのリンク */}
+          <p className="mt-6 text-center text-sm text-gray-600">
+            お問い合わせの際は<Link href="/privacy" className="text-[var(--primary-dark)] underline hover:no-underline">プライバシーポリシー</Link>をご確認ください。
+          </p>
 
           <div className="mt-12 text-center">
             <Link
