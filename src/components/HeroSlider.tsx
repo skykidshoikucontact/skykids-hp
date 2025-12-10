@@ -88,8 +88,8 @@ export default function HeroSlider() {
             className="w-full h-auto"
           />
           <span
-            className="absolute inset-0 flex items-center justify-center text-[#00CFFF] font-bold text-base md:text-lg"
-            style={{ fontFamily: '"Zen Maru Gothic", sans-serif' }}
+            className="absolute inset-0 flex items-center justify-center text-[#00CFFF] text-lg md:text-xl"
+            style={{ fontFamily: '"Zen Maru Gothic", sans-serif', fontWeight: 900 }}
           >
             児童募集中
           </span>
