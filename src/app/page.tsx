@@ -147,25 +147,25 @@ export default async function HomePage() {
               <div className="aspect-[3/2] rounded-2xl shadow-[0_4px_12px_rgba(0,0,0,0.1)] overflow-hidden mb-3 group-hover:shadow-lg transition-shadow">
                 <img src="/images/children_playtime_01.jpg" alt="生活の様子1" className="w-full h-full object-cover" />
               </div>
-              <p className="text-center text-base font-medium">みんなで遊ぶ時間</p>
+              <p className="text-center text-base font-medium">自分の力で進む喜びを大切にしています。</p>
             </div>
             <div className="group">
               <div className="aspect-[3/2] rounded-2xl shadow-[0_4px_12px_rgba(0,0,0,0.1)] overflow-hidden mb-3 group-hover:shadow-lg transition-shadow">
                 <img src="/images/children_playtime_02.jpg" alt="生活の様子2" className="w-full h-full object-cover" />
               </div>
-              <p className="text-center text-base font-medium">楽しい活動</p>
+              <p className="text-center text-base font-medium">楽しみながら学べる活動を取り入れています。</p>
             </div>
             <div className="group">
               <div className="aspect-[3/2] rounded-2xl shadow-[0_4px_12px_rgba(0,0,0,0.1)] overflow-hidden mb-3 group-hover:shadow-lg transition-shadow">
                 <img src="/images/children_playtime_03.jpg" alt="生活の様子3" className="w-full h-full object-cover object-top" />
               </div>
-              <p className="text-center text-base font-medium">のびのび過ごす</p>
+              <p className="text-center text-base font-medium">年齢を超えて、思いやりが育まれます。</p>
             </div>
             <div className="group">
               <div className="aspect-[3/2] rounded-2xl shadow-[0_4px_12px_rgba(0,0,0,0.1)] overflow-hidden mb-3 group-hover:shadow-lg transition-shadow">
                 <img src="/images/children_playtime_07.jpg" alt="食育の様子" className="w-full h-full object-cover" />
               </div>
-              <p className="text-center text-base font-medium">食育</p>
+              <p className="text-center text-base font-medium">育てる経験が、食への関心を深めます。</p>
             </div>
           </div>
 
