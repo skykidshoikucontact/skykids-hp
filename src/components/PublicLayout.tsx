@@ -173,6 +173,7 @@ export default function PublicLayout({
                 <li><Link href="/recruit" className="hover:text-[var(--primary-color)]">児童募集</Link></li>
                 <li><Link href="/schedule" className="hover:text-[var(--primary-color)]">一日の流れ</Link></li>
                 <li><Link href="/news" className="hover:text-[var(--primary-color)]">お知らせ</Link></li>
+                <li><Link href="/documents" className="hover:text-[var(--primary-color)]">書類ダウンロード</Link></li>
               </ul>
             </div>
 
