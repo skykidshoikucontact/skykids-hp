@@ -128,7 +128,7 @@ export default async function HomePage() {
               <img src="/images/desks.jpg" alt="学習スペース" className="w-full h-full object-cover" />
             </div>
             <div className="aspect-[4/3] rounded-2xl shadow-[0_4px_12px_rgba(0,0,0,0.1)] overflow-hidden col-span-2 md:col-span-1">
-              <img src="/images/children_playtime_06.jpg" alt="遊びの様子" className="w-full h-full object-cover object-bottom" />
+              <img src="/images/children_playtime_06.png" alt="遊びの様子" className="w-full h-full object-cover object-bottom" />
             </div>
             <div className="hidden md:block aspect-[4/3] rounded-2xl shadow-[0_4px_12px_rgba(0,0,0,0.1)] overflow-hidden">
               <img src="/images/children_playtime_01.jpg" alt="室内遊び" className="w-full h-full object-cover" />
