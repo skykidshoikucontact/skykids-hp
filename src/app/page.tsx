@@ -142,7 +142,7 @@ export default async function HomePage() {
         <div className="max-w-5xl mx-auto px-4">
           <h2 className="text-2xl font-bold text-center mb-10">SKY KIDSでの生活</h2>
 
-          <div className="grid md:grid-cols-3 gap-6 mb-8">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-8">
             <div className="group">
               <div className="aspect-[3/2] rounded-2xl shadow-[0_4px_12px_rgba(0,0,0,0.1)] overflow-hidden mb-3 group-hover:shadow-lg transition-shadow">
                 <img src="/images/children_playtime_01.jpg" alt="生活の様子1" className="w-full h-full object-cover" />
@@ -160,6 +160,12 @@ export default async function HomePage() {
                 <img src="/images/children_playtime_03.jpg" alt="生活の様子3" className="w-full h-full object-cover" />
               </div>
               <p className="text-center text-base font-medium">のびのび過ごす</p>
+            </div>
+            <div className="group">
+              <div className="aspect-[3/2] rounded-2xl shadow-[0_4px_12px_rgba(0,0,0,0.1)] overflow-hidden mb-3 group-hover:shadow-lg transition-shadow">
+                <img src="/images/children_playtime_07.jpg" alt="食育の様子" className="w-full h-full object-cover" />
+              </div>
+              <p className="text-center text-base font-medium">食育</p>
             </div>
           </div>
 
