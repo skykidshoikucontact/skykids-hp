@@ -13,6 +13,13 @@ export default async function HomePage() {
 
   return (
     <PublicLayout>
+      {/* 工事中バナー */}
+      <div className="bg-yellow-400 text-center py-3 px-4">
+        <p className="text-sm font-bold text-yellow-900">
+          🚧 このサイトは現在準備中です 🚧
+        </p>
+      </div>
+
       {/* Hero Slider */}
       <HeroSlider />
 
