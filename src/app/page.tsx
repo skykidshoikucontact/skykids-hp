@@ -122,13 +122,17 @@ export default async function HomePage() {
           {/* 写真グリッド 2列×3枚 */}
           <div className="grid grid-cols-2 gap-4">
             <div className="aspect-[4/3] rounded-2xl shadow-[0_4px_12px_rgba(0,0,0,0.1)] overflow-hidden">
-              <img src="/images/skykids_view.jpg" alt="施設外観" className="w-full h-full object-cover" />
+              {/* モバイル: indoor_playground_01, PC: skykids_view */}
+              <img src="/images/indoor_playground_01.jpg" alt="室内遊び場" className="md:hidden w-full h-full object-cover" />
+              <img src="/images/skykids_view.jpg" alt="施設外観" className="hidden md:block w-full h-full object-cover" />
             </div>
             <div className="aspect-[4/3] rounded-2xl shadow-[0_4px_12px_rgba(0,0,0,0.1)] overflow-hidden">
               <img src="/images/desks.jpg" alt="学習スペース" className="w-full h-full object-cover" />
             </div>
             <div className="aspect-[4/3] rounded-2xl shadow-[0_4px_12px_rgba(0,0,0,0.1)] overflow-hidden col-span-2 md:col-span-1">
-              <img src="/images/children_playtime_03.jpg" alt="遊びスペース" className="w-full h-full object-cover" />
+              {/* モバイル: children_playtime_06, PC: children_playtime_03 */}
+              <img src="/images/children_playtime_06.jpg" alt="遊びの様子" className="md:hidden w-full h-full object-cover" />
+              <img src="/images/children_playtime_03.jpg" alt="遊びスペース" className="hidden md:block w-full h-full object-cover" />
             </div>
             <div className="hidden md:block aspect-[4/3] rounded-2xl shadow-[0_4px_12px_rgba(0,0,0,0.1)] overflow-hidden">
               <img src="/images/children_playtime_01.jpg" alt="室内遊び" className="w-full h-full object-cover" />
