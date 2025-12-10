@@ -58,7 +58,7 @@ export default function ContactPage() {
 
           {/* プライバシーポリシーへのリンク */}
           <p className="mt-6 text-center text-sm text-gray-600">
-            お問い合わせの際は<Link href="/privacy" className="text-[var(--primary-dark)] underline hover:no-underline">プライバシーポリシー</Link>をご確認ください。
+            お問い合わせの際は<Link href="/privacy" className="text-[var(--primary-color)] font-bold underline hover:bg-[var(--primary-color)] hover:text-white px-1 rounded transition-colors">プライバシーポリシー</Link>をご確認ください。
           </p>
 
           <div className="mt-12 text-center">
