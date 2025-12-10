@@ -157,7 +157,7 @@ export default async function HomePage() {
             </div>
             <div className="group">
               <div className="aspect-[3/2] rounded-2xl shadow-[0_4px_12px_rgba(0,0,0,0.1)] overflow-hidden mb-3 group-hover:shadow-lg transition-shadow">
-                <img src="/images/children_playtime_03.jpg" alt="生活の様子3" className="w-full h-full object-cover" />
+                <img src="/images/children_playtime_03.jpg" alt="生活の様子3" className="w-full h-full object-cover object-top" />
               </div>
               <p className="text-center text-base font-medium">のびのび過ごす</p>
             </div>
