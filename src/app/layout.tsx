@@ -3,7 +3,20 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: "SKY KIDS | スカイキッズ",
-  description: "鹿児島県霧島市の児童クラブ SKY KIDS（スカイキッズ）。小学生を対象とした学童保育・一時預かりを行っています。忙しいお母さんお父さんの子育てを応援します。",
+  description: "鹿児島県霧島市の児童クラブ SKY KIDS（スカイキッズ）。小学生を対象とした学童保育・一時預かりを行っています。忙しいお母さんお父さんの子育てを応援しています！",
+  openGraph: {
+    title: "SKY KIDS | スカイキッズ",
+    description: "鹿児島県霧島市の児童クラブ SKY KIDS（スカイキッズ）。忙しいお母さんお父さんの子育てを応援しています！",
+    url: "https://skykids-hp.vercel.app",
+    siteName: "SKY KIDS",
+    locale: "ja_JP",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "SKY KIDS | スカイキッズ",
+    description: "鹿児島県霧島市の児童クラブ SKY KIDS（スカイキッズ）。忙しいお母さんお父さんの子育てを応援しています！",
+  },
 };
 
 export default function RootLayout({
