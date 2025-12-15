@@ -23,7 +23,7 @@ export default function PublicLayout({
               alt="SKY KIDS"
               fill
               sizes="180px"
-              className="object-fill object-left scale-x-105"
+              className="object-contain object-left"
               priority
             />
           </Link>
