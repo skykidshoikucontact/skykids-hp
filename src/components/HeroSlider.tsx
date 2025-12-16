@@ -18,7 +18,7 @@ const slides = [
   },
   {
     id: 3,
-    image: 'https://images.unsplash.com/photo-1596464716053-b709e28d7b73?w=1600&q=80',
+    image: 'https://images.unsplash.com/photo-1516627145497-ae6968895b74?w=1600&q=80',
     title: '',
     subtitle: '',
   },
