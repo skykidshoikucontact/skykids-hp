@@ -311,7 +311,7 @@ export default async function HomePage() {
                   <li>・クリスマス会</li>
                 </ul>
                 <div className="mt-3 w-48 h-32 rounded-lg overflow-hidden">
-                  <img src="https://images.unsplash.com/photo-1509557965875-b88c97052f0e?w=400&q=80" alt="ハロウィンかぼちゃ" className="w-full h-full object-cover" />
+                  <img src="https://images.unsplash.com/photo-1508361001413-7a9dca21d08a?w=400&q=80" alt="ハロウィンかぼちゃ" className="w-full h-full object-cover" />
                 </div>
               </div>
             </div>
