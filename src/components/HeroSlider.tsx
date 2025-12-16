@@ -6,19 +6,19 @@ import Link from 'next/link';
 const slides = [
   {
     id: 1,
-    image: 'https://images.unsplash.com/photo-1587654780291-39c9404d746b?w=1600&q=80',
+    image: 'https://images.unsplash.com/photo-1544776193-352d25ca82cd?w=1600&q=80',
     title: '空色の放課後が、\n子供を育てる。',
     subtitle: '',
   },
   {
     id: 2,
-    image: 'https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?w=1600&q=80',
+    image: 'https://images.unsplash.com/photo-1587654780291-39c9404d746b?w=1600&q=80',
     title: '',
     subtitle: '',
   },
   {
     id: 3,
-    image: 'https://images.unsplash.com/photo-1544776193-352d25ca82cd?w=1600&q=80',
+    image: 'https://images.unsplash.com/photo-1596464716053-b709e28d7b73?w=1600&q=80',
     title: '',
     subtitle: '',
   },
