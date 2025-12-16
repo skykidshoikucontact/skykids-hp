@@ -328,7 +328,7 @@ export default async function HomePage() {
                   <li>・進級・卒業お祝い</li>
                 </ul>
                 <div className="mt-3 w-48 h-32 rounded-lg overflow-hidden">
-                  <img src="https://images.unsplash.com/photo-1577037927765-54f1a47e9d57?w=400&q=80" alt="ひな祭り" className="w-full h-full object-cover" />
+                  <img src="https://images.unsplash.com/photo-1490122417551-6ee9691429d0?w=400&q=80" alt="ひな祭り" className="w-full h-full object-cover" />
                 </div>
               </div>
             </div>
