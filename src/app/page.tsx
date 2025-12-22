@@ -295,7 +295,7 @@ export default async function HomePage() {
                   <li>・野菜の収穫</li>
                 </ul>
                 <div className="mt-3 w-48 h-32 rounded-lg overflow-hidden">
-                  <img src="https://images.unsplash.com/photo-1530103862676-de8c9debad1d?w=400&q=80" alt="七夕" className="w-full h-full object-cover" />
+                  <img src="/images/harvest_experience.png" alt="収穫体験" className="w-full h-full object-cover" />
                 </div>
               </div>
             </div>
@@ -311,7 +311,7 @@ export default async function HomePage() {
                   <li>・クリスマス会</li>
                 </ul>
                 <div className="mt-3 w-48 h-32 rounded-lg overflow-hidden">
-                  <img src="https://images.unsplash.com/photo-1508361001413-7a9dca21d08a?w=400&q=80" alt="ハロウィンかぼちゃ" className="w-full h-full object-cover" />
+                  <img src="/images/Halloween_pumpkins.png" alt="ハロウィンかぼちゃ" className="w-full h-full object-cover" />
                 </div>
               </div>
             </div>
@@ -328,7 +328,7 @@ export default async function HomePage() {
                   <li>・進級・卒業お祝い</li>
                 </ul>
                 <div className="mt-3 w-48 h-32 rounded-lg overflow-hidden">
-                  <img src="https://images.unsplash.com/photo-1490122417551-6ee9691429d0?w=400&q=80" alt="ひな祭り" className="w-full h-full object-cover" />
+                  <img src="/images/hina_matsuri.png" alt="ひな祭り" className="w-full h-full object-cover" />
                 </div>
               </div>
             </div>
