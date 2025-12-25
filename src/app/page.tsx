@@ -211,9 +211,11 @@ export default async function HomePage() {
           <div className="max-w-lg mx-auto">
             <div className="border-2 border-[var(--primary-color)] rounded-2xl overflow-hidden">
               {[
-                { label: '入会金', value: settings.pricing.enrollmentFee },
-                { label: '月額利用料', value: settings.pricing.monthlyFee0to2 },
-                { label: '延長料金', value: settings.pricing.extendedCare },
+                { label: '入園料', value: settings.pricing.enrollmentFee },
+                { label: '月額保育料（0〜2歳）', value: settings.pricing.monthlyFee0to2 },
+                { label: '月額保育料（3〜5歳）', value: settings.pricing.monthlyFee3to5 },
+                { label: '給食費', value: settings.pricing.mealFee },
+                { label: '延長保育', value: settings.pricing.extendedCare },
               ].map((item, index) => (
                 <div
                   key={item.label}
