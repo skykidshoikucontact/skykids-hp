@@ -121,17 +121,9 @@ export default async function HomePage() {
             </p>
           </div>
 
-          {/* 写真グリッド 2列 */}
-          <div className="grid grid-cols-2 gap-4">
-            <div className="aspect-[4/3] rounded-2xl shadow-[0_4px_12px_rgba(0,0,0,0.1)] overflow-hidden">
-              <img src="/images/indoor_playground_01.webp" alt="室内遊び場" className="w-full h-full object-cover" />
-            </div>
-            <div className="aspect-[4/3] rounded-2xl shadow-[0_4px_12px_rgba(0,0,0,0.1)] overflow-hidden">
-              <img src="/images/desks.webp" alt="学習スペース" className="w-full h-full object-cover" />
-            </div>
-            <div className="aspect-[4/3] rounded-2xl shadow-[0_4px_12px_rgba(0,0,0,0.1)] overflow-hidden col-span-2">
-              <img src="/images/children_playtime_06.webp" alt="遊びの様子" className="w-full h-full object-cover object-bottom" />
-            </div>
+          {/* 写真 */}
+          <div className="aspect-[16/9] rounded-2xl shadow-[0_4px_12px_rgba(0,0,0,0.1)] overflow-hidden">
+            <img src="/images/children_playtime_06.webp" alt="遊びの様子" className="w-full h-full object-cover object-bottom" />
           </div>
         </div>
       </section>
