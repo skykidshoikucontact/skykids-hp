@@ -3,15 +3,17 @@
 import { useState } from 'react';
 import Link from 'next/link';
 import { useRouter, usePathname } from 'next/navigation';
+import { useCsrf } from '@/hooks/useCsrf';
 
 export default function AdminHeader() {
   const router = useRouter();
   const pathname = usePathname();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const { fetchWithCsrf } = useCsrf();
 
   const handleLogout = async () => {
     try {
-      await fetch('/api/logout', { method: 'POST' });
+      await fetchWithCsrf('/api/logout', { method: 'POST' });
       router.push('/admin/login');
     } catch (error) {
       console.error('Logout error:', error);
