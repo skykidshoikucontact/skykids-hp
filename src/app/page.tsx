@@ -46,7 +46,8 @@ export default async function HomePage() {
               <p className="text-base leading-[1.7] text-gray-700 mb-6">
                 「預け先がなくて、仕事を調整するしかない」<br />
                 「頼れる人が近くにいない」<br />
-                そんな毎日の悩みを、少しでも軽くしたい。
+                そんな毎日の悩みに寄り添い、<br />
+                保護者の皆さまの子育てを支えたいと考えています。
               </p>
               <p className="text-base leading-[1.7] text-gray-700 mb-6">
                 小規模な施設だからこそ、<br />
