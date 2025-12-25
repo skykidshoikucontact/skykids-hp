@@ -40,7 +40,7 @@ export default async function HomePage() {
                 忙しいお母さんお父さんの<br />
                 子育てを応援しています！
               </h3>
-              <p className="text-sm text-[var(--primary-color)] font-medium mb-6">
+              <p className="text-sm text-emerald-500 font-medium mb-6">
                 実家に頼れない日も、安心して預けられる場所
               </p>
               <p className="text-base leading-[1.7] text-gray-700 mb-6">
