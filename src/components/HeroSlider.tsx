@@ -2,23 +2,24 @@
 
 import { useState, useEffect, useCallback } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 
 const slides = [
   {
     id: 1,
-    image: '/images/hero_2.png',
+    image: '/images/hero_2.webp',
     title: '空色の放課後が、\n子供を育てる。',
     subtitle: '',
   },
   {
     id: 2,
-    image: '/images/hero_1.png',
+    image: '/images/hero_1.webp',
     title: '',
     subtitle: '',
   },
   {
     id: 3,
-    image: '/images/hero_3.png',
+    image: '/images/hero_3.webp',
     title: '',
     subtitle: '',
   },
@@ -48,10 +49,13 @@ export default function HeroSlider() {
         >
           {/* Background with image */}
           <div className="absolute inset-0">
-            <img
+            <Image
               src={slide.image}
               alt=""
-              className="w-full h-full object-cover"
+              fill
+              sizes="100vw"
+              className="object-cover"
+              priority={index === 0}
             />
           </div>
 
