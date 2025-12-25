@@ -3,9 +3,9 @@
 import { useState, useEffect } from 'react';
 
 const meals = [
-  { id: 1, label: '給食1' },
-  { id: 2, label: '給食2' },
-  { id: 3, label: '給食3' },
+  { id: 1, label: '食事1' },
+  { id: 2, label: '食事2' },
+  { id: 3, label: '食事3' },
 ];
 
 export default function MealsCarousel() {

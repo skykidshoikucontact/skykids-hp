@@ -52,10 +52,10 @@ export default async function HomePage() {
               <p className="text-base leading-[1.7] text-gray-700 mb-6">
                 小規模な施設だからこそ、<br />
                 お子さま一人ひとりと向き合い、<br />
-                その子のペースを大切にした保育を行っています。
+                その子のペースを大切にしたサポートを行っています。
               </p>
               <p className="text-base leading-[1.7] text-gray-700">
-                保育士・看護師が在籍しているため、<br />
+                スタッフ・看護師が在籍しているため、<br />
                 小さなお子さまも安心。<br />
                 初めての預け先としてもご利用いただけます。
               </p>
@@ -171,10 +171,10 @@ export default async function HomePage() {
         </div>
       </section>
 
-      {/* 給食のご紹介 */}
+      {/* 食事のご紹介 */}
       <section id="meals" className="py-16 bg-white">
         <div className="max-w-5xl mx-auto px-4">
-          <h2 className="text-2xl font-bold text-center mb-10">給食のご紹介</h2>
+          <h2 className="text-2xl font-bold text-center mb-10">食事のご紹介</h2>
           <MealsCarousel />
         </div>
       </section>
