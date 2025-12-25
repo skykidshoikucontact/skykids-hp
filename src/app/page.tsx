@@ -36,32 +36,28 @@ export default async function HomePage() {
               />
             </div>
             <div>
-              <h3 className="text-xl font-bold mb-4 text-[var(--primary-dark)]">
+              <h3 className="text-xl font-bold mb-2 text-[var(--primary-dark)]">
                 忙しいお母さんお父さんの<br />
                 子育てを応援しています！
               </h3>
-              <p className="text-base leading-[1.7] text-gray-700 mb-6">
-                「子どもを預けたいけど、毎日実家に頼るのは難しい…」<br />
-                そんな想いから、気軽に安心して預けられる場所をつくりました。
+              <p className="text-sm text-[var(--primary-color)] font-medium mb-6">
+                実家に頼れない日も、安心して預けられる場所
               </p>
               <p className="text-base leading-[1.7] text-gray-700 mb-6">
-                小規模だからこそ、一人ひとりにしっかり向き合えます。<br />
-                アットホームな雰囲気の中で、お子さまの成長を温かく見守ります。
+                「預け先がなくて、仕事を調整するしかない」<br />
+                「頼れる人が近くにいない」<br />
+                そんな毎日の悩みを、少しでも軽くしたい。
               </p>
-              <ul className="space-y-3">
-                <li className="flex items-center gap-3">
-                  <span className="w-7 h-7 bg-[var(--accent-color)] rounded-full flex items-center justify-center text-[var(--primary-dark)] text-sm">✓</span>
-                  <span className="text-base">児童クラブ・一時預かり対応</span>
-                </li>
-                <li className="flex items-center gap-3">
-                  <span className="w-7 h-7 bg-[var(--accent-color)] rounded-full flex items-center justify-center text-[var(--primary-dark)] text-sm">✓</span>
-                  <span className="text-base">経験豊富な保育士・看護師在籍</span>
-                </li>
-                <li className="flex items-center gap-3">
-                  <span className="w-7 h-7 bg-[var(--accent-color)] rounded-full flex items-center justify-center text-[var(--primary-dark)] text-sm">✓</span>
-                  <span className="text-base">0歳から一時預かり可能</span>
-                </li>
-              </ul>
+              <p className="text-base leading-[1.7] text-gray-700 mb-6">
+                小規模な施設だからこそ、<br />
+                お子さま一人ひとりと向き合い、<br />
+                その子のペースを大切にした保育を行っています。
+              </p>
+              <p className="text-base leading-[1.7] text-gray-700">
+                保育士・看護師が在籍しているため、<br />
+                小さなお子さまも安心。<br />
+                初めての預け先としてもご利用いただけます。
+              </p>
             </div>
           </div>
         </div>
