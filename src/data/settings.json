@@ -1,10 +1,12 @@
 {
   "pricing": {
-    "enrollmentFee": "お問い合わせください",
-    "monthlyFee0to2": "お問い合わせください",
-    "monthlyFee3to5": "お問い合わせください",
-    "mealFee": "お問い合わせください",
-    "extendedCare": "お問い合わせください"
+    "enrollmentFee": "3,000円",
+    "insuranceFee": "5,000円/年",
+    "monthlyFee": "7,500円",
+    "singleParentFee": "6,000円",
+    "mealFee": "800円/月",
+    "extendedCare": "200円/30分",
+    "longVacationFee": "13,000円〜"
   },
   "availability": {
     "asOfDate": "2025年12月",
@@ -12,10 +14,6 @@
       {
         "name": "児童クラブ",
         "status": "○ 空きあり"
-      },
-      {
-        "name": "一時預かり",
-        "status": "○ 受付中"
       }
     ]
   }

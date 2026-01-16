@@ -155,20 +155,29 @@ export default function SettingsManager() {
             />
           </div>
           <div>
-            <label className="block text-sm font-medium text-gray-700 mb-1">月額利用料（0〜2歳）</label>
+            <label className="block text-sm font-medium text-gray-700 mb-1">年間保険料</label>
             <input
               type="text"
-              value={settings.pricing.monthlyFee0to2}
-              onChange={(e) => updatePricing('monthlyFee0to2', e.target.value)}
+              value={settings.pricing.insuranceFee}
+              onChange={(e) => updatePricing('insuranceFee', e.target.value)}
               className="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-[var(--primary-color)] focus:border-transparent outline-none"
             />
           </div>
           <div>
-            <label className="block text-sm font-medium text-gray-700 mb-1">月額利用料（3歳以上）</label>
+            <label className="block text-sm font-medium text-gray-700 mb-1">月額利用料</label>
             <input
               type="text"
-              value={settings.pricing.monthlyFee3to5}
-              onChange={(e) => updatePricing('monthlyFee3to5', e.target.value)}
+              value={settings.pricing.monthlyFee}
+              onChange={(e) => updatePricing('monthlyFee', e.target.value)}
+              className="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-[var(--primary-color)] focus:border-transparent outline-none"
+            />
+          </div>
+          <div>
+            <label className="block text-sm font-medium text-gray-700 mb-1">ひとり親世帯</label>
+            <input
+              type="text"
+              value={settings.pricing.singleParentFee}
+              onChange={(e) => updatePricing('singleParentFee', e.target.value)}
               className="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-[var(--primary-color)] focus:border-transparent outline-none"
             />
           </div>
@@ -187,6 +196,15 @@ export default function SettingsManager() {
               type="text"
               value={settings.pricing.extendedCare}
               onChange={(e) => updatePricing('extendedCare', e.target.value)}
+              className="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-[var(--primary-color)] focus:border-transparent outline-none"
+            />
+          </div>
+          <div>
+            <label className="block text-sm font-medium text-gray-700 mb-1">長期休暇期間</label>
+            <input
+              type="text"
+              value={settings.pricing.longVacationFee}
+              onChange={(e) => updatePricing('longVacationFee', e.target.value)}
               className="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-[var(--primary-color)] focus:border-transparent outline-none"
             />
           </div>

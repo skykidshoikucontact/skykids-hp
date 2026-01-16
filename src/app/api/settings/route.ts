@@ -53,9 +53,32 @@ export async function PUT(request: NextRequest) {
       return NextResponse.json({ error: '料金情報が必要です' }, { status: 400 });
     }
 
+    // セキュリティ: 価格データの型・形式検証
+    const pricingFields = ['enrollmentFee', 'insuranceFee', 'monthlyFee', 'singleParentFee', 'mealFee', 'extendedCare', 'longVacationFee'];
+    for (const field of pricingFields) {
+      const value = data.pricing[field as keyof typeof data.pricing];
+      if (typeof value !== 'string' || value.length > 50) {
+        return NextResponse.json({ error: `料金情報（${field}）が不正です` }, { status: 400 });
+      }
+    }
+
     // Validate availability
     if (!data.availability || !data.availability.asOfDate || !data.availability.classes) {
       return NextResponse.json({ error: '空き状況情報が必要です' }, { status: 400 });
+    }
+
+    // セキュリティ: 空き状況データの検証
+    if (typeof data.availability.asOfDate !== 'string' || data.availability.asOfDate.length > 50) {
+      return NextResponse.json({ error: '日付情報が不正です' }, { status: 400 });
+    }
+    if (!Array.isArray(data.availability.classes) || data.availability.classes.length > 20) {
+      return NextResponse.json({ error: 'クラス情報が不正です' }, { status: 400 });
+    }
+    for (const cls of data.availability.classes) {
+      if (typeof cls.name !== 'string' || cls.name.length > 50 ||
+          typeof cls.status !== 'string' || cls.status.length > 20) {
+        return NextResponse.json({ error: 'クラス情報の形式が不正です' }, { status: 400 });
+      }
     }
 
     const result = await getFileContent(DATA_PATH);

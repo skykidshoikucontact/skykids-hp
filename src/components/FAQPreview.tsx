@@ -6,7 +6,7 @@ import Link from 'next/link';
 const previewFaqs = [
   {
     question: '対象年齢・学年は？',
-    answer: '対象学年・学校は特にございません。0歳から一時預かりも可能です。お気軽にご相談ください。',
+    answer: '小学1年生から6年生までが対象です。お気軽にご相談ください。',
   },
   {
     question: '見学はできますか？',

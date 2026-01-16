@@ -21,10 +21,12 @@ export interface AvailabilityClass {
 export interface Settings {
   pricing: {
     enrollmentFee: string;
-    monthlyFee0to2: string;
-    monthlyFee3to5: string;
+    insuranceFee: string;
+    monthlyFee: string;
+    singleParentFee: string;
     mealFee: string;
     extendedCare: string;
+    longVacationFee: string;
   };
   availability: {
     asOfDate: string;

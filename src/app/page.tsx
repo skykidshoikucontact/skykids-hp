@@ -204,10 +204,12 @@ export default async function HomePage() {
             <div className="border-2 border-[var(--primary-color)] rounded-2xl overflow-hidden">
               {[
                 { label: '入会金', value: settings.pricing.enrollmentFee },
-                { label: '月額利用料（0〜2歳）', value: settings.pricing.monthlyFee0to2 },
-                { label: '月額利用料（3歳以上）', value: settings.pricing.monthlyFee3to5 },
+                { label: '年間保険料', value: settings.pricing.insuranceFee },
+                { label: '月額利用料', value: settings.pricing.monthlyFee },
+                { label: 'ひとり親世帯', value: settings.pricing.singleParentFee },
                 { label: 'おやつ代', value: settings.pricing.mealFee },
                 { label: '延長料金', value: settings.pricing.extendedCare },
+                { label: '長期休暇期間', value: settings.pricing.longVacationFee },
               ].map((item, index) => (
                 <div
                   key={item.label}
@@ -221,7 +223,7 @@ export default async function HomePage() {
               ))}
             </div>
             <p className="text-sm text-gray-500 mt-4 text-center">
-              ※1人親世帯割引、兄弟・姉妹割引あり。詳細はお問い合わせください。
+              ※対象は小学生からです。兄弟・姉妹割引あり。詳細はお問い合わせください。
             </p>
           </div>
         </div>

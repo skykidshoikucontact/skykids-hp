@@ -90,29 +90,37 @@ export default function RecruitPage() {
                 <tbody>
                   <tr className="border-b">
                     <td className="py-3 font-medium w-40">入会金</td>
-                    <td className="py-3">XX,XXX円</td>
+                    <td className="py-3">3,000円</td>
+                  </tr>
+                  <tr className="border-b">
+                    <td className="py-3 font-medium">年間保険料</td>
+                    <td className="py-3">5,000円/年</td>
                   </tr>
                   <tr className="border-b">
                     <td className="py-3 font-medium">月額利用料</td>
-                    <td className="py-3">XX,XXX円</td>
+                    <td className="py-3">7,500円</td>
+                  </tr>
+                  <tr className="border-b">
+                    <td className="py-3 font-medium">ひとり親世帯</td>
+                    <td className="py-3">6,000円</td>
                   </tr>
                   <tr className="border-b">
                     <td className="py-3 font-medium">おやつ代</td>
-                    <td className="py-3">X,XXX円/月</td>
+                    <td className="py-3">800円/月</td>
                   </tr>
                   <tr className="border-b">
                     <td className="py-3 font-medium">延長料金</td>
-                    <td className="py-3">XXX円/30分</td>
+                    <td className="py-3">200円/30分</td>
                   </tr>
                   <tr>
-                    <td className="py-3 font-medium">一時預かり</td>
-                    <td className="py-3">X,XXX円/日</td>
+                    <td className="py-3 font-medium">長期休暇期間</td>
+                    <td className="py-3">13,000円〜</td>
                   </tr>
                 </tbody>
               </table>
             </div>
             <p className="text-xs text-gray-500 mt-4">
-              ※ 兄弟割引、ひとり親世帯割引あり。詳細はお問い合わせください。
+              ※ 兄弟・姉妹割引あり。詳細はお問い合わせください。
             </p>
           </section>
 
