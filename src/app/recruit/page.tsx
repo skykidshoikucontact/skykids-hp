@@ -1,12 +1,15 @@
 import Link from 'next/link';
 import PublicLayout from '@/components/PublicLayout';
+import { getSettings } from '@/lib/dataFetcher';
 
 export const metadata = {
   title: '児童募集 | SKY KIDS',
   description: 'SKY KIDSの児童募集要項です。',
 };
 
-export default function RecruitPage() {
+export default async function RecruitPage() {
+  const settings = await getSettings();
+
   return (
     <PublicLayout>
       <div className="py-12">
@@ -90,31 +93,31 @@ export default function RecruitPage() {
                 <tbody>
                   <tr className="border-b">
                     <td className="py-3 font-medium w-40">入会金</td>
-                    <td className="py-3">3,000円</td>
+                    <td className="py-3">{settings.pricing.enrollmentFee}</td>
                   </tr>
                   <tr className="border-b">
                     <td className="py-3 font-medium">年間保険料</td>
-                    <td className="py-3">5,000円/年</td>
+                    <td className="py-3">{settings.pricing.insuranceFee}</td>
                   </tr>
                   <tr className="border-b">
                     <td className="py-3 font-medium">月額利用料</td>
-                    <td className="py-3">7,500円</td>
+                    <td className="py-3">{settings.pricing.monthlyFee}</td>
                   </tr>
                   <tr className="border-b">
                     <td className="py-3 font-medium">ひとり親世帯</td>
-                    <td className="py-3">6,000円</td>
+                    <td className="py-3">{settings.pricing.singleParentFee}</td>
                   </tr>
                   <tr className="border-b">
                     <td className="py-3 font-medium">おやつ代</td>
-                    <td className="py-3">800円/月</td>
+                    <td className="py-3">{settings.pricing.mealFee}</td>
                   </tr>
                   <tr className="border-b">
                     <td className="py-3 font-medium">延長料金</td>
-                    <td className="py-3">200円/30分</td>
+                    <td className="py-3">{settings.pricing.extendedCare}</td>
                   </tr>
                   <tr>
                     <td className="py-3 font-medium">長期休暇期間</td>
-                    <td className="py-3">13,000円〜</td>
+                    <td className="py-3">{settings.pricing.longVacationFee}</td>
                   </tr>
                 </tbody>
               </table>
