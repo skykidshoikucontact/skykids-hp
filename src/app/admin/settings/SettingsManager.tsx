@@ -214,16 +214,6 @@ export default function SettingsManager() {
       {/* 空き状況 */}
       <div className="bg-white rounded-lg shadow p-6 mb-6">
         <h2 className="text-lg font-bold mb-4">空き状況</h2>
-        <div className="mb-4">
-          <label className="block text-sm font-medium text-gray-700 mb-1">基準日（例: 2025年1月）</label>
-          <input
-            type="text"
-            value={settings.availability.asOfDate}
-            onChange={(e) => updateAvailabilityDate(e.target.value)}
-            className="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-[var(--primary-color)] focus:border-transparent outline-none"
-          />
-        </div>
-
         <div className="space-y-3">
           {settings.availability.classes.map((cls, index) => (
             <div key={index} className="flex gap-3 items-center">

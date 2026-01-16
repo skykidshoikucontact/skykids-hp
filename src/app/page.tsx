@@ -234,7 +234,7 @@ export default async function HomePage() {
         <div className="max-w-5xl mx-auto px-4">
           <h2 className="text-2xl font-bold text-center mb-4">空き状況</h2>
           <p className="text-base text-center text-gray-600 mb-8">
-            {settings.availability.asOfDate}現在の空き状況です。最新情報はお問い合わせください。
+            最新情報はお問い合わせください。
           </p>
 
           <div className="max-w-md mx-auto bg-white rounded-2xl shadow-sm overflow-hidden">
