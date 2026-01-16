@@ -25,13 +25,13 @@ export default function PrivacyPage() {
           <div className="bg-white border rounded-lg p-8">
             <div className="text-sm text-gray-700 space-y-6 leading-relaxed">
               <p>
-                児童クラブ SKY KIDS（以下「当施設」）は、お問い合わせいただいた際に取得する個人情報について、以下のとおり適切に取り扱います。
+                児童クラブ SKY KIDS（以下「当施設」）は、お問い合わせフォーム、お電話、LINE等を通じて取得する個人情報について、以下のとおり適切に取り扱います。
               </p>
 
               <section>
                 <h2 className="font-bold text-base mb-2">1. 個人情報の利用目的</h2>
                 <p>
-                  お問い合わせへの回答、見学・入会に関するご連絡、当施設からのお知らせのために利用いたします。
+                  お問い合わせへの回答、見学・入会に関するご連絡、当施設からのお知らせのために利用いたします。LINE公式アカウントを通じてご連絡いただいた場合も同様です。
                 </p>
               </section>
 
