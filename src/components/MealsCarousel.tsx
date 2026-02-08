@@ -3,9 +3,9 @@
 import { useState, useEffect } from 'react';
 
 const meals = [
-  { id: 1, label: '食事1' },
-  { id: 2, label: '食事2' },
-  { id: 3, label: '食事3' },
+  { id: 1, src: '/images/lunch_3.jpg', label: '食事1' },
+  { id: 2, src: '/images/lunch_2.jpg', label: '食事2' },
+  { id: 3, src: '/images/lunch_1.jpg', label: '食事3' },
 ];
 
 export default function MealsCarousel() {
@@ -37,8 +37,8 @@ export default function MealsCarousel() {
     return (
       <div className="grid md:grid-cols-3 gap-4">
         {meals.map((meal) => (
-          <div key={meal.id} className="bg-gray-200 aspect-[4/3] rounded-2xl shadow-[0_4px_12px_rgba(0,0,0,0.1)] flex items-center justify-center text-gray-500 text-sm">
-            {meal.label}
+          <div key={meal.id} className="aspect-[4/3] rounded-2xl shadow-[0_4px_12px_rgba(0,0,0,0.1)] overflow-hidden">
+            <img src={meal.src} alt={meal.label} className="w-full h-full object-cover" />
           </div>
         ))}
       </div>
@@ -54,8 +54,8 @@ export default function MealsCarousel() {
       >
         {meals.map((meal) => (
           <div key={meal.id} className="flex-shrink-0 w-full px-4">
-            <div className="bg-gray-200 aspect-[4/3] rounded-2xl shadow-[0_4px_12px_rgba(0,0,0,0.1)] flex items-center justify-center text-gray-500 text-sm">
-              {meal.label}
+            <div className="aspect-[4/3] rounded-2xl shadow-[0_4px_12px_rgba(0,0,0,0.1)] overflow-hidden">
+              <img src={meal.src} alt={meal.label} className="w-full h-full object-cover" />
             </div>
           </div>
         ))}
