@@ -393,13 +393,14 @@ export default async function HomePage() {
                 <div className="flex gap-3">
                   <dt className="font-bold w-20 shrink-0">営業時間</dt>
                   <dd className="text-gray-700">
-                    月〜金 11:00〜19:00<br />
-                    土 7:30〜19:00
+                    月〜金 11:00〜18:30<br />
+                    土 7:30〜18:30
+                    <span className="block text-xs text-gray-500 mt-1">※延長利用で最大19:00まで</span>
                   </dd>
                 </div>
                 <div className="flex gap-3">
                   <dt className="font-bold w-20 shrink-0">定休日</dt>
-                  <dd className="text-gray-700">日曜日</dd>
+                  <dd className="text-gray-700">日曜日・祝日</dd>
                 </div>
                 <div className="flex gap-3">
                   <dt className="font-bold w-20 shrink-0">アクセス</dt>
@@ -414,7 +415,7 @@ export default async function HomePage() {
             <h3 className="font-bold text-lg mb-4 text-center">駐車場完備</h3>
             <div className="grid grid-cols-2 gap-4 max-w-2xl mx-auto">
               <div className="aspect-[4/3] rounded-2xl shadow-[0_4px_12px_rgba(0,0,0,0.1)] overflow-hidden">
-                <img src="/images/parkinglots1.jpg" alt="駐車場1" className="w-full h-full object-cover" />
+                <img src="/images/parkinglots1.jpg" alt="駐車場1" className="w-full h-full object-cover object-top" />
               </div>
               <div className="aspect-[4/3] rounded-2xl shadow-[0_4px_12px_rgba(0,0,0,0.1)] overflow-hidden">
                 <img src="/images/parkinglots2.jpg" alt="駐車場2" className="w-full h-full object-cover" />

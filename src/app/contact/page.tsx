@@ -39,7 +39,7 @@ export default function ContactPage() {
               TEL: 0995-70-6623
             </a>
             <p className="text-gray-500 text-sm mt-2">
-              受付時間: 月〜金 11:00〜19:00 / 土 7:30〜19:00
+              受付時間: 月〜金 11:00〜18:30 / 土 7:30〜18:30
             </p>
           </article>
 
