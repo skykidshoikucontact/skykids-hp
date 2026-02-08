@@ -55,7 +55,7 @@ export default async function HomePage() {
                 その子のペースを大切にしたサポートを行っています。
               </p>
               <p className="text-base leading-[1.7] text-gray-700">
-                保育士・看護師が在籍しているため、<br />
+                保育士が在籍しているため、<br />
                 小さなお子さまも安心。<br />
                 初めての預け先としてもご利用いただけます。
               </p>
@@ -223,7 +223,8 @@ export default async function HomePage() {
               ))}
             </div>
             <p className="text-sm text-gray-500 mt-4 text-center">
-              ※対象は小学生からです。兄弟・姉妹割引あり。詳細はお問い合わせください。
+              ※対象は小学生からです。兄弟・姉妹割引あり。詳細はお問い合わせください。<br />
+              ※おやつはアレルギー等で持参をご希望の方はお気軽にご相談ください
             </p>
           </div>
         </div>
@@ -273,7 +274,6 @@ export default async function HomePage() {
                 <ul className="text-base text-gray-700 space-y-1">
                   <li>・新年度スタート</li>
                   <li>・こどもの日イベント</li>
-                  <li>・野菜の苗植え（食育）</li>
                 </ul>
                 <div className="mt-3 w-48 h-32 rounded-lg overflow-hidden">
                   <img src="https://images.unsplash.com/photo-1522383225653-ed111181a951?w=400&q=80" alt="桜" className="w-full h-full object-cover" />
@@ -290,10 +290,9 @@ export default async function HomePage() {
                   <li>・七夕会</li>
                   <li>・水遊び</li>
                   <li>・夏休み特別プログラム</li>
-                  <li>・野菜の収穫</li>
                 </ul>
                 <div className="mt-3 w-48 h-32 rounded-lg overflow-hidden">
-                  <img src="/images/harvest_experience.webp" alt="収穫体験" className="w-full h-full object-cover" />
+                  <img src="/images/play5.jpg" alt="夏の遊び" className="w-full h-full object-cover" />
                 </div>
               </div>
             </div>

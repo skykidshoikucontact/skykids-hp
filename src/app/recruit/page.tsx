@@ -109,7 +109,7 @@ export default async function RecruitPage() {
                   </tr>
                   <tr className="border-b">
                     <td className="py-3 font-medium">おやつ代</td>
-                    <td className="py-3">{settings.pricing.mealFee}</td>
+                    <td className="py-3">{settings.pricing.mealFee}<br /><span className="text-sm text-gray-500">※アレルギー等で持参をご希望の方はお気軽にご相談ください</span></td>
                   </tr>
                   <tr className="border-b">
                     <td className="py-3 font-medium">延長料金</td>
