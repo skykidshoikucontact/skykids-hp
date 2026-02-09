@@ -9,7 +9,7 @@ export const metadata = {
 const weekdaySchedule = [
   { time: '下校時', activity: 'お迎え・来所', icon: '🏫', description: '学校までお迎えに行きます' },
   { time: '〜15:30', activity: '宿題タイム', icon: '📚', description: 'スタッフがサポートします' },
-  { time: '15:30', activity: 'おやつ', icon: '🍪', description: 'おやつをみんなで' },
+  { time: '15:30', activity: 'おやつ', icon: '🍪', description: 'バイキング形式で好きなものを選べます' },
   { time: '16:00', activity: '自由遊び', icon: '⚽', description: '外遊びや室内遊び' },
   { time: '17:00', activity: '室内活動', icon: '🎨', description: '読書や工作など' },
   { time: '〜19:00', activity: 'お迎え・帰宅', icon: '👋', description: '保護者のお迎え' },
@@ -22,7 +22,7 @@ const saturdaySchedule = [
   { time: '12:00', activity: '昼食', icon: '🍱', description: '調理師による手作り給食' },
   { time: '13:00', activity: '休憩・自由時間', icon: '😴', description: 'ゆっくり過ごします' },
   { time: '14:00', activity: '午後の活動', icon: '🎪', description: '工作や集団遊び' },
-  { time: '15:30', activity: 'おやつ', icon: '🍪', description: 'おやつ' },
+  { time: '15:30', activity: 'おやつ', icon: '🍪', description: 'バイキング形式で好きなものを選べます' },
   { time: '16:00', activity: '自由遊び', icon: '🎲', description: '好きな遊びを' },
   { time: '〜19:00', activity: 'お迎え・帰宅', icon: '👋', description: '保護者のお迎え' },
 ];
