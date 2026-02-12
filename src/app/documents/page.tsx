@@ -67,26 +67,26 @@ export default async function DocumentsPage() {
                 {docs.filter(doc => doc.url).map((doc, docIndex) => (
                   <div
                     key={doc.id}
-                    className={`flex items-center justify-between p-4 hover:bg-gray-50 transition-colors ${
+                    className={`flex items-center justify-between gap-4 px-5 py-4 hover:bg-gray-50 transition-colors ${
                       docIndex < docs.filter(d => d.url).length - 1 ? 'border-b' : ''
                     }`}
                   >
-                    <div>
+                    <div className="min-w-0">
                       <p className="font-medium">{doc.name}</p>
                       {doc.description && (
-                        <p className="text-sm text-gray-500">{doc.description}</p>
+                        <p className="text-sm text-gray-500 mt-0.5">{doc.description}</p>
                       )}
                     </div>
                     <a
                       href={doc.url}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="flex items-center gap-2 bg-[var(--primary-color)] text-white px-4 py-2 rounded-full text-sm hover:bg-[var(--primary-dark)] transition-colors"
+                      className="shrink-0 text-[var(--primary-color)] hover:text-[var(--primary-dark)] transition-colors p-2"
+                      aria-label={`${doc.name}をダウンロード`}
                     >
-                      <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+                      <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4v12m0 0l-4-4m4 4l4-4M4 18h16" />
                       </svg>
-                      ダウンロード
                     </a>
                   </div>
                 ))}
