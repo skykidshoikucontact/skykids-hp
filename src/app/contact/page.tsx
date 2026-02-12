@@ -50,7 +50,7 @@ export default function ContactPage() {
           <article className="bg-white border rounded-lg p-6 text-center hover:shadow-md transition-shadow">
             <p className="text-gray-600 text-sm mb-4">フォームからのお問い合わせ</p>
             <a
-              href="https://docs.google.com/forms/d/e/1FAIpQLSdjMbznJ6oPyulEHHs92ZslfFip8T--3h4BuOqm2UFdeI3uwQ/viewform"
+              href="https://docs.google.com/forms/d/e/1FAIpQLSeqM_uwPKLBh8LYdN4ygDE8Er_LF-Ro1D_bs5VvgbGvnHfrVQ/viewform"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block w-full max-w-md bg-[var(--primary-color)] text-white font-bold py-4 rounded-full text-lg hover:bg-[var(--primary-dark)] transition-colors shadow-lg"

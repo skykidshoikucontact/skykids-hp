@@ -206,7 +206,7 @@ export default async function RecruitPage() {
           <div className="text-center mt-10">
             <p className="text-gray-600 mb-4">まずはお気軽にお問い合わせください</p>
             <a
-              href="https://docs.google.com/forms/d/e/1FAIpQLSdjMbznJ6oPyulEHHs92ZslfFip8T--3h4BuOqm2UFdeI3uwQ/viewform"
+              href="https://docs.google.com/forms/d/e/1FAIpQLSeqM_uwPKLBh8LYdN4ygDE8Er_LF-Ro1D_bs5VvgbGvnHfrVQ/viewform"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block bg-[var(--primary-color)] text-white font-bold py-4 px-8 rounded-full text-lg hover:bg-[var(--primary-dark)] transition-colors shadow-lg"

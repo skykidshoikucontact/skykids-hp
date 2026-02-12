@@ -367,7 +367,7 @@ export default async function HomePage() {
             お気軽にお申し込みください。
           </p>
           <a
-            href="https://docs.google.com/forms/d/e/1FAIpQLSdjMbznJ6oPyulEHHs92ZslfFip8T--3h4BuOqm2UFdeI3uwQ/viewform"
+            href="https://docs.google.com/forms/d/e/1FAIpQLSeqM_uwPKLBh8LYdN4ygDE8Er_LF-Ro1D_bs5VvgbGvnHfrVQ/viewform"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block w-[90%] max-w-md bg-[var(--primary-color)] text-white font-bold py-4 rounded-full text-lg hover:bg-[var(--primary-dark)] transition-colors shadow-lg"
